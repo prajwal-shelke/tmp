@@ -6,6 +6,7 @@
     }else {
     header("Location: ./ownerlogin.php");
   }
+  // 
   if (isset($_SESSION['Delid'])) {
     $id=$_SESSION['Delid'];
     if (isset($_POST['vieworderitems'])) {

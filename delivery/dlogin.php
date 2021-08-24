@@ -8,6 +8,7 @@ if (isset($_SESSION['Ownerid'])) {
 if (isset($_SESSION['Delid'])) {
   header("Location: ./deliverydash.php");
 }
+// 
 if (isset($_POST['deliveryboy'])) {
   $mail = mysqli_real_escape_string($con,$_POST['d_email']);
   $query = "SELECT * FROM employee WHERE email='$mail'";
